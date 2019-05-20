@@ -31,7 +31,6 @@ while continuer:
     if joueur.collision(point):
         joueur.prendre(point)
         joueur.score += 1
-        joueur.nbMorceaux += 1
         joueur.ajouterMorceau(listeMorceaux, fenetre, joueur)
 
     for morceau in listeMorceaux:

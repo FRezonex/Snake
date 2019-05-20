@@ -103,10 +103,9 @@ class Joueur(Objet):
         objet.mort = True
 
     def ajouterMorceau(self, listeMorceaux, fenetre, joueur):
-        for i in range(self.nbMorceaux):
-            morceau = MorceauJoueur(pygame.image.load("Joueur.png").convert_alpha(), fenetre)
-            morceau.placer(joueur, listeMorceaux)
-            listeMorceaux.append(morceau)
+        morceau = MorceauJoueur(pygame.image.load("Joueur.png").convert_alpha(), fenetre)
+        morceau.placer(joueur, listeMorceaux)
+        listeMorceaux.append(morceau)
 
 
 
